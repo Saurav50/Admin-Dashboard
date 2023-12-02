@@ -1,0 +1,33 @@
+.page-display {
+  margin-right: 10px;
+  color: gray;
+  font-size: small;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  align-items: center;
+}
+
+button {
+  padding: 4px 7px;
+}
+button.active {
+  background-color: #f2f2f2;
+
+  font-weight: bold;
+}
+
+.page-display-span {
+  color: black !important;
+  font-weight: 600;
+}
+
+/* media queries needed for responsiveness */
+@media (max-width: 768px) {
+  .pagination {
+    justify-content: center;
+  }
+}

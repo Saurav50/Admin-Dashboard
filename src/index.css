@@ -1,0 +1,16 @@
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    margin: 20px 0;
+  }
+}

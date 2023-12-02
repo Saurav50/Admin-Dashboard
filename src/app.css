@@ -1,0 +1,29 @@
+.app {
+  width: 65vw;
+  font-family: "Mooli", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.search-icon {
+  margin-left: 20px;
+  border: 1px solid gray;
+  border-radius: 4px;
+
+  padding: 6px;
+  width: 22.5%;
+}
+/* media queries needed for responsiveness */
+@media (max-width: 1080px) {
+  .app {
+    width: 90vw;
+  }
+  .search-icon {
+    width: 55% !important;
+    display: flex;
+    justify-content: center;
+  }
+  .Search {
+    display: flex;
+    justify-content: center;
+  }
+}

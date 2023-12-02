@@ -1,0 +1,31 @@
+.small-image {
+  width: 15px;
+  height: 15px;
+}
+button {
+  background-color: transparent;
+  margin-right: 5px;
+  border: 0.5px solid;
+  border-color: gainsboro;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+.selected-row {
+  background-color: #e0e0e0 !important;
+}
+.delete,
+.edit,
+.save {
+  cursor: pointer;
+  padding: 4px;
+}
+.save:hover {
+  border: 1px solid green;
+}
+.delete:hover {
+  border: 1px solid saddlebrown;
+}
+.edit:hover {
+  border: 1px solid grey;
+}

@@ -1,0 +1,74 @@
+.records-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.records-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Selected Row Styling */
+.selected-row {
+  background-color: #e6f7ff;
+}
+
+/* Delete Selected Button Container */
+.delete-selected-button-container {
+  text-align: center;
+  padding: 10px;
+}
+.delete-selected {
+  background-color: gainsboro;
+  padding: 5px;
+  font-weight: 600;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.delete-selected:hover {
+  border: 0.1px solid saddlebrown;
+}
+
+.select-all-col {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.selected-rows-count {
+  font-size: x-small;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* media queries needed for responsiveness */
+@media (max-width: 768px) {
+  .records-card {
+    overflow-x: scroll !important;
+  }
+  .records-card th,
+  .records-card td {
+    font-size: 14px;
+  }
+}
