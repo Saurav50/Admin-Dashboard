@@ -28,6 +28,8 @@ button.active {
 /* media queries needed for responsiveness */
 @media (max-width: 768px) {
   .pagination {
+    flex-direction: column;
+    gap: 5px;
     justify-content: center;
   }
 }

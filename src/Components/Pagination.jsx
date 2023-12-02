@@ -33,28 +33,30 @@ const Pagination = ({ onPageChanged, currentPage, totalPages }) => {
         Page <span className="page-display-span">{currentPage}</span> of{" "}
         {totalPages}
       </span>
-      <button onClick={() => handlePageClick(1)} disabled={currentPage === 1}>
-        &lt;&lt;
-      </button>
-      <button
-        onClick={() => handlePageClick(currentPage - 1)}
-        disabled={currentPage === 1}
-      >
-        &lt;
-      </button>
-      {renderPageNumbers()}
-      <button
-        onClick={() => handlePageClick(currentPage + 1)}
-        disabled={currentPage === totalPages}
-      >
-        &gt;
-      </button>
-      <button
-        onClick={() => handlePageClick(totalPages)}
-        disabled={currentPage === totalPages}
-      >
-        &gt;&gt;
-      </button>
+      <div>
+        <button onClick={() => handlePageClick(1)} disabled={currentPage === 1}>
+          &lt;&lt;
+        </button>
+        <button
+          onClick={() => handlePageClick(currentPage - 1)}
+          disabled={currentPage === 1}
+        >
+          &lt;
+        </button>
+        {renderPageNumbers()}
+        <button
+          onClick={() => handlePageClick(currentPage + 1)}
+          disabled={currentPage === totalPages}
+        >
+          &gt;
+        </button>
+        <button
+          onClick={() => handlePageClick(totalPages)}
+          disabled={currentPage === totalPages}
+        >
+          &gt;&gt;
+        </button>
+      </div>
     </div>
   );
 };
