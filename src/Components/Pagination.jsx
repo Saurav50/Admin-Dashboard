@@ -30,7 +30,7 @@ const Pagination = ({ onPageChanged, currentPage, totalPages }) => {
   return (
     <div className="pagination">
       <span className="page-display">
-        Page <span className="page-display-span">{currentPage}</span> of
+        Page <span className="page-display-span">{currentPage}</span> of{" "}
         {totalPages}
       </span>
       <button onClick={() => handlePageClick(1)} disabled={currentPage === 1}>
