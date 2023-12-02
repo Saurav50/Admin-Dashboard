@@ -31,5 +31,6 @@ button.active {
     flex-direction: column;
     gap: 5px;
     justify-content: center;
+    align-items: center;
   }
 }
